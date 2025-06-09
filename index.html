@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-container">
+    <div class="location-bar">
+      <input type="text" id="location-input" placeholder="Hanoi, Vietnam" />
+    </div>
+    <div class="main-weather">
+      <h1 id="temperature">28°</h1>
+      <p id="weather-condition">Rainy Day</p>
+      <p id="summary">Today, expect a rainy day with temperatures reaching a maximum of 28°C. Make sure to grab your umbrella and raincoat before heading out.</p>
+    </div>
+    <div class="info-cards">
+      <div class="card" id="feels-like">Feels Like: <span>30°</span></div>
+      <div class="card" id="precipitation">Precipitation: <span>2.3"</span></div>
+      <div class="card" id="visibility">Visibility: <span>6 mi</span></div>
+      <div class="card" id="humidity">Humidity: <span>82%</span></div>
+    </div>
+    <div class="forecast">
+      <h3>Hourly Forecast</h3>
+      <div class="forecast-row" id="hourly-forecast"></div>
+
+      <h3>10-Day Forecast</h3>
+      <div class="forecast-row" id="daily-forecast"></div>
+    </div>
+    <div class="bottom-cards">
+      <div class="card" id="uv-index">
+        UV Index: <span>3 (Moderate)</span>
+        <div class="uv-bar"><div class="uv-fill"></div></div>
+      </div>
+      <div class="card" id="wind">
+        Wind: <span>3 MPH</span><br />
+        Gusts: <span>9 MPH</span>
+        <div class="compass"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
